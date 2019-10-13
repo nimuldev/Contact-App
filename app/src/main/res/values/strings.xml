@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Phone</string>
+
+    <string-array name="Relation">
+
+        <item>
+            Father
+        </item>
+        <item>
+            Mother
+        </item>
+        <item>
+            Brother
+        </item>
+        <item>
+            Sister
+        </item>
+        <item>
+            Son
+        </item>
+        <item>
+            Daughter
+        </item>
+        <item>
+            Husband
+        </item>
+        <item>
+            Wife
+        </item>
+        <item>
+            Love
+        </item>
+        <item>
+            ETC
+        </item>
+    </string-array>
+
+
+</resources>

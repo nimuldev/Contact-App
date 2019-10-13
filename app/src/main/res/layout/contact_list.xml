@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageIV"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/picture" />
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+
+                        android:id="@+id/nameTV"
+                        android:layout_width="match_parent"
+                        android:layout_weight=".7"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:hint="Name"
+                        android:layout_marginRight="2dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_more_vert_black_24dp"
+                        android:layout_weight=".3"
+                        android:id="@+id/daleteIv"
+
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+
+                    >
+                    <TextView
+                        android:layout_weight=".7"
+
+                        android:id="@+id/phoneTV"
+                        android:layout_marginRight="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:hint="Phone"
+                        android:layout_gravity="center"
+
+                        />
+                    <ImageView
+                        android:layout_marginLeft="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_icon"
+                        android:id="@+id/callIV"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+/>
+</LinearLayout>

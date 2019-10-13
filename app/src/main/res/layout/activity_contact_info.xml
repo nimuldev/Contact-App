@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactInfo">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#464343"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textStyle="bold"
+            android:textColor="#FFFFFFFF"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/picture"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:id="@+id/imageIV"
+                />
+
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000000"
+                />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Name "
+                android:id="@+id/nameTV"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Work"
+                android:id="@+id/workTV"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+
+                >
+                <TextView
+                    android:layout_weight=".7"
+
+                    android:id="@+id/phoneTV"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="Phone"
+                    android:layout_gravity="center"
+
+                    />
+                <ImageView
+                    android:layout_marginLeft="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight=".3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_icon"
+                    android:id="@+id/callIV"
+                    android:onClick="Call"
+                    />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="17sp"
+                android:id="@+id/emailTV"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:textSize="17sp"
+                android:id="@+id/addressTV"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nickname"
+                android:id="@+id/nickTV"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Relationship"
+                android:id="@+id/relationACTV"
+                />
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
